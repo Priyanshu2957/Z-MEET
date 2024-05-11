@@ -1,13 +1,13 @@
 # Z-MEET
  Built with the latest Next.js and TypeScript, this project replicates Zoom, a widely used video conferencing tool. It enables users to securely log in, create meetings and access various meeting functionalities such as recording, screen sharing, and managing participants.
 
-# ⚙️ Tech that I used in this project:-
-Next.js
-TypeScript
-Clerk
-getstream
-shadcn
-Tailwind CSS
+# ⚙️ TECH USED:-
+- Next.js
+* TypeScript
+* Clerk
+* getstream
+* shadcn
+* Tailwind CSS
 
 # FEATURES:-
 
