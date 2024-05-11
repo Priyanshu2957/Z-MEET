@@ -4,7 +4,7 @@ import React from 'react'
 const Home = () => {
   const curr = new Date();
 
-  const time = curr.toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit'});
+  const time = curr.toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Kolkata});
   const date = curr.toLocaleDateString('en-US',{dateStyle:'full'});
   return (
     <section className='flex size-full flex-col gap-10 text-white'>
