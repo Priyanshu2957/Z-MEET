@@ -91,7 +91,7 @@ const MeetingTypeList = () => {
 
         <HomeCard img="/icons/join-meeting.svg"
             title='Join Meeting'
-            desc='Join a exixting meeting'
+            desc='Join an existing meeting'
             click={()=> setmeetingState('isJoiningMeeting')} 
             color = "bg-red-500"
             />
