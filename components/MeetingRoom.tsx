@@ -35,6 +35,8 @@ const MeetingRoom = () => {
   const [showParticipants, setshowParticipants] = useState(false);
   const { useCallCallingState } = useCallStateHooks();
   const callingState = useCallCallingState();
+  const curr_url = window.location.href;
+
 
   if(callingState !== CallingState.JOINED) return <Loader />
   const CallLayout = () => {
