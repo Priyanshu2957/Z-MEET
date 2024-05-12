@@ -6,6 +6,7 @@ const ds = Sedgwick_Ave_Display({
   subsets : ['latin'],
 })      
 const Home = () => {
+  const curr = new Date();
   const timeNow = curr.toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',timeZone: 'Asia/Kolkata',hour12:false});
   const time = curr.toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',timeZone: 'Asia/Kolkata'});
   const date = curr.toLocaleDateString('en-US',{dateStyle:'full',timeZone: 'Asia/Kolkata'});
