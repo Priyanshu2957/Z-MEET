@@ -99,6 +99,22 @@ const MeetingRoom = () => {
               />
             </div>
         </button>
+        <Button 
+        onClick={() => {
+          navigator.clipboard.writeText(curr_url);
+          toast({
+            title: "Meeting Link Copied",
+          });
+        }}
+        className=" bg-blue-1 hover:bg-blue-400  ">
+          <span className=" hidden md:block">Copy Link</span>
+          <Image className=" block md:hidden lg:hidden"
+                src="/icons/copy.svg"
+                alt="feature"
+                width={20}
+                height={20}
+              />
+        </Button>
         {!isPersonalRoom && <EndCallButton />}
       </div>
     </section>
