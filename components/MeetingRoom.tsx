@@ -22,6 +22,9 @@ import { LayoutList, User } from "lucide-react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { EndCallButton } from "./EndCallButton";
 import Loader from "./Loader";
+import { Button } from "./ui/button";
+import { toast } from "./ui/use-toast";
+import Image from "next/image";
 
 type CalLayoutType = "grid" | "speaker-left" | "speaker-right";
 const MeetingRoom = () => {
