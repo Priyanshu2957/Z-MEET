@@ -6,12 +6,12 @@ const ds = Sedgwick_Ave_Display({
   subsets : ['latin'],
 })      
 const Home = () => {
-  const curr = new Date();
+  const timeNow = curr.toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',timeZone: 'Asia/Kolkata',hour12:false});
   const time = curr.toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',timeZone: 'Asia/Kolkata'});
   const date = curr.toLocaleDateString('en-US',{dateStyle:'full',timeZone: 'Asia/Kolkata'});
-  const greeting = time >= '5' && time < '12'
+  const greeting = timeNow >= '5' && timeNow < '12'
     ? "Good Morning"
-    : time >= '12' && time < '18'
+    : timeNow >= '12' && timeNow < "18"
     ? "Good Afternoon"
     : "Good Evening";
   return (
