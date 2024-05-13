@@ -7,7 +7,7 @@ const ds = Sedgwick_Ave_Display({
 })      
 const Home = () => {
   const curr = new Date();
-  const timeNow = curr.toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',timeZone: 'Asia/Kolkata',hour12:false});
+  const timeNow = curr.toLocaleTimeString({hour:'numeric',timeZone: 'Asia/Kolkata',hour12:false});
   const time = curr.toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',timeZone: 'Asia/Kolkata'});
   const date = curr.toLocaleDateString('en-US',{dateStyle:'full',timeZone: 'Asia/Kolkata'});
   const greeting = timeNow >= '5' && timeNow < '12'
